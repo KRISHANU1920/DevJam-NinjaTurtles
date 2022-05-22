@@ -1,38 +1,10 @@
-h2{
+h1{
     font-family: Arial, Helvetica, sans-serif;
-}
-.container{
- display: block;
- background-color: rgb(170, 166, 166);
- font-family: Arial, Helvetica, sans-serif;
- font-size: medium;
- border: 2px rgb(3, 3, 3);
- border-width: 5px rgb(21, 22, 22);
- border-radius: 2em;
- margin: 12%;
+    color: white;
 }
 
-form{
-    margin-top: 10%;
-    margin-left: 5%;
-    text-align: center;
-}
-
-label{
-    display: block;
-    padding: 1em;
-    margin-top: 2em;
-
-}
-
-select{
-    display: block;
-    position: absolute;
-    background-color: rgb(235, 239, 242);
-    padding: .75rem;
-    border-radius: .25rem;
-    box-shadow: 0px 2px 2px 0px rgb(138, 138, 138);
-    border: none;
-    text-align: center;
-    margin-left: 20%;
+body{
+    background-image: url(../../img/form-background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
