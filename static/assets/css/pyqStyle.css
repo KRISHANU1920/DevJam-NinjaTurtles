@@ -4,7 +4,9 @@ h1{
 }
 
 body{
-    background-image: url(../../img/form-background.jpg);
+    background: rgba(0, 0, 0, .4) url(../../img/form-background.jpg);
+    background-blend-mode: darken;
     background-attachment: fixed;
     background-size: cover;
+
 }

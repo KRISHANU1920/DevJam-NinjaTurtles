@@ -22,6 +22,14 @@ body{
     width: 100%;
 }
 
+#main{
+    overflow: auto;
+}
+
+footer{
+    position: relative;;
+}
+
 .navbar{
     opacity: 0.8;
     width: 100%;
