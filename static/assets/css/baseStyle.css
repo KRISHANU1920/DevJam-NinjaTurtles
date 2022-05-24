@@ -61,6 +61,7 @@ footer .container{
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
+    z-index: 999;
 }
 
 .footer-col{
@@ -130,6 +131,10 @@ footer .container{
     opacity: 0.8;
     width: 100%;
     position: fixed;
+}
+
+.navbar-item{
+    text-align: center;
 }
 
 .nav-link{
