@@ -8,4 +8,5 @@ urlpatterns = [
     path('academics', views.academics, name='academics'),
     path('placement', views.placement, name='placement'),
     path('contact', views.contact, name='contact'),
+    path('forms/formPYQ', views.formPYQ, name='formPYQ'),
 ]
