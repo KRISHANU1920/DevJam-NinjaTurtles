@@ -1,1 +1,71 @@
 /* write your styling here */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+#mycarousel {
+    width: 100%;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+}
+
+#myrow{
+    padding: 0;
+    margin: 0;
+}
+
+#mycol{
+    padding:0;
+}
+.carousel-inner{
+    width: 100%;
+    padding: 0;
+}
+
+.carousel-item::after {
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.5);
+  }
+
+.carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.carousel-caption{
+    color: white;
+    z-index: 999;
+    margin-bottom: 80px;
+}
+
+.carousel-caption h5{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.carousel-caption p{
+    font-size: 20px;
+}
+
+.carousel-fade{
+    transition: all 0.3s ease;
+}
+
+
