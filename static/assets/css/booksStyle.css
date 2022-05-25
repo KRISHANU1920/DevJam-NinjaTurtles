@@ -10,3 +10,50 @@ body{
     background-size: cover;
 
 }
+
+table{
+    min-width: 400px;
+    color: white;
+    border-collapse: collapse;
+    margin: 25px 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 8px ;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,.15);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+thead th{
+    background-color: rgba(0, 0, 0, 1);
+    text-align: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.601);
+    font-weight: 500;
+
+}
+tbody tr{
+    color: #bbbbbbd5;
+    background-color: rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgb(111, 111, 111);
+}
+tbody tr:hover td{   
+    color: white;
+    transform: scale(1.06);
+}
+
+tbody tr:nth-child(even){
+    background-color: rgba(119, 118, 118, 0.334);
+    border-bottom: 1px solid rgb(111, 111, 111);
+}
+
+tbody tr:last-of-type{
+    background-color: rgba(119, 118, 118, 0.334);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.601);
+}
+
+table td{
+    padding: 12px 15px;
+    text-align: center; 
+}

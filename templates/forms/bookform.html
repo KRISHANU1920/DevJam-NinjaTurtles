@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    {% load static %}
     <div class="container mx-lg-5 mt-lg-5">
         <div class="row">
             <h1 class="text-center rounded-3 p-3 bg-black bg-opacity-75 pt-3 text-white" > Books </h1>
@@ -15,6 +16,7 @@
         
         <div class="row py-3 ">
             <form action="" class="form-group rounded-4 bg-black bg-opacity-50 pt-3 text-white" method="post">
+                {% csrf_token %}
                 <div class="col-md-6 m-auto">
                     <div class="form-group">
                         <label for="course">Course </label>
@@ -57,6 +59,42 @@
             
         </div>
     </div>
+
+    <table>
+        <thead>
+            <th> S.no </th>
+            <th> Name </th>
+            <th> Author </th>
+            <th> Download </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td> 1 </td>
+                <td> sagd </td>
+                <td> sagd </td>
+                <td> sagd </td>
+            </tr>
+            <tr>
+                <td> 2 </td>
+                <td> sagd </td>
+                <td> sagd </td>
+                <td> sagd </td>
+            </tr>
+            <tr>
+                <td> 3 </td>
+                <td> sagd </td>
+                <td> sagd </td>
+                <td> sagd </td>
+            </tr>
+            <tr>
+                <td> 4 </td>
+                <td> sagd </td>
+                <td> sagd </td>
+                <td> sagd </td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 
 </html>
