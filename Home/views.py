@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponse
 from django.template import loader
-from .models import PYQ
+from .models import PYQ, Calender
 
 # Create your views here.
 def index(request):
@@ -33,4 +33,19 @@ def formPYQ(request):
     else:
         context ={}
     template = loader.get_template('forms/formPYQ.html')
+    return HttpResponse(template.render(context, request))
+
+def calender(request):
+    if request.method == 'POST':
+        course = request.POST['course']
+        branch = request.POST['branch']
+        semester = request.POST['semester']
+        myCal = Calender.objects.filter(course=course, branch=branch, semester=semester)
+        context = {
+            'myCal': myCal,
+        }
+    
+    else:
+        context ={}
+    template = loader.get_template('forms/Calender.html')
     return HttpResponse(template.render(context, request))

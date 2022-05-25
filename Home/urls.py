@@ -9,4 +9,5 @@ urlpatterns = [
     path('placement', views.placement, name='placement'),
     path('contact', views.contact, name='contact'),
     path('forms/formPYQ', views.formPYQ, name='formPYQ'),
+    path('forms/Calender', views.calender, name='Calender'),
 ]
