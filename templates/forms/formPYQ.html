@@ -84,7 +84,7 @@
 
     {% if myPYQ %}
         <ul>
-            <p style="color: white;">Files to download</p>
+            <p style="color: white;">Click on the Files to download</p>
             {% for x in myPYQ %}
             <li><a href="{{x.file.url}}" download>{{x.file}}</a></li>
             {% endfor %}

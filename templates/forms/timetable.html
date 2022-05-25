@@ -50,7 +50,7 @@
                             <option value="5">5th</option>
                             <option value="6">6th</option>
                             <option value="7">7th</option>
-                        </select>
+                        </select><br>
                     <!-- </div><br> -->
                     <div class="form-group pb-3">
                         <button class="btn btn-dark btn-block" id="submit" type="submit">Submit</button>
@@ -61,19 +61,18 @@
 
         </div>
     </div>
-    <div class="container mx-lg-5 mt-lg-5">
-      <div class="row">
-        <h3 class="text-center rounded-3 p-3 bg-black bg-opacity-75 pt-3 text-white"> Click <a href="#">here</a> to download your desired Time Table.
-        </h3>
-      </div>
-    </div>
 
+    {% if myTT %}
+        <div class="container mx-lg-5 mt-lg-5">
+        <div class="row">
+            {% for x in myTT %}
+            <h3 class="text-center rounded-3 p-3 bg-black bg-opacity-75 pt-3 text-white"> Click <a href="{{x.file.url}} " download>here</a> to download your desired Time Table.
+            </h3>
+            {% endfor %}
+        </div>
+        </div>
+    {% endif %}
 
-    <ul>
-        {% for x in myPYQ %}
-        <li><a href="{{x.file.url}}" download>{{x.file}}</a></li>
-        {% endfor %}
-    </ul>
 </body>
 
 </html>
