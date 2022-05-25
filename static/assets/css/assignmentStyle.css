@@ -10,3 +10,51 @@ body{
     background-size: cover;
 
 }
+
+ul{
+    position: relative;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0, 0.4);
+    list-style: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 400px;
+    margin-right: 400px;
+    overflow: hidden;
+
+}
+
+ul li{
+    display: flex;
+    margin: 5px 0;
+    background-color: rgba(25, 24, 24, 0.4);
+    border-radius: 5px;
+    padding: 5px;
+    transition: .5s;
+}
+
+ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block; 
+    transition: all 0.3s ease;
+    padding-left: 40px;
+}
+
+ul li a:hover{
+    transform: scale(1.09);    
+    color: white;
+    /* padding-left: 50px; */
+}
+
+ul p{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+
