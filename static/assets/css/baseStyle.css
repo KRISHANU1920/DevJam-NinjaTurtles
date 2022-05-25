@@ -19,7 +19,7 @@ body{
     box-sizing: border-box;
 }
 
-.container{
+#header .container, #footer .container{
     border: 0;
     margin: 0;
     padding: 0;
@@ -128,23 +128,23 @@ footer .container{
     background-color: white;
 }
 
-.navbar{
+#header .navbar{
     opacity: 0.8;
     width: 100%;
     z-index: 999;
     position: fixed;
 }
 
-.navbar-item{
+#header .navbar-item{
     text-align: center;
 }
 
-.nav-link{
+#header .nav-link{
     color: white;
     padding: 1rem;
 }
 
-.nav-link:hover{
+#header .nav-link:hover{
     background-color: rgb(66, 66, 66);
     color: white;
     border-bottom: 3px solid;

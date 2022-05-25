@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Books</title>
+    <link rel="stylesheet" tyle=text/css href="../../static/assets/css/bootstrap.css">
+    <link rel="stylesheet" tyle=text/css href="../../static/assets/css/dsaStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Tutorial</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <table>
+                <thead>
+                    <th> S.no </th>
+                    <th> Name </th>
+                    <th> Author </th>
+                    <th> PDF </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> {{forloop.counter}} </td>
+                        <td> {{x.Name}} </td>
+                        <td> {{x.Author}} </td>
+                        <td>
+                            <ul>
+                                <li><a href="{{x.file.url}} " download>Download</a></li>
+                            </ul>  
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

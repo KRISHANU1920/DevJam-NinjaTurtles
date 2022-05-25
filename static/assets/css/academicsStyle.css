@@ -1,0 +1,52 @@
+.cards{
+    background: rgba(78, 78, 78, 0.308);
+    box-shadow: 8px 10px 20px 5px rgb(0, 0, 0);
+    color: #bbbbbb;
+    border-radius: 4%;
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+
+.cards img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    background: rgba(0, 0, 0, .3); 
+    background-blend-mode: darken;
+    overflow: hidden;
+    padding-bottom: 10px;
+    filter: brightness(70%);
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+}
+
+.card-img-top {
+    height: 35vh;
+    object-fit: cover;
+}
+
+.card-body{
+    padding: 10px;
+}
+
+.card-title{
+    margin-bottom: 10px;
+}
+
+button a{
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block; 
+    transition: all 0.3s ease;
+}
+
+button a:hover{
+    transform: scale(1.09);    
+    color: white;
+    /* padding-left: 50px; */
+}

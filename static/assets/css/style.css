@@ -11,6 +11,18 @@
     padding: 0;
     max-width: 100%;
 }
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    /* background: rgba(0, 0, 0, .3) url(../../img/index-background.jpg);  */
+    background-blend-mode: darken;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 #mycarousel {
     width: 100%;
@@ -100,9 +112,9 @@
 }
 
 .cards{
-    background: rgba(78, 78, 78, 0.308);
+    background: rgba(29, 26, 26, 0.782);
     box-shadow: 8px 10px 20px 5px rgb(0, 0, 0);
-    color: #bbbbbb;
+    color: #ffffff;
     border-radius: 4%;
     /* margin-right: auto;
     margin-left: auto; */
@@ -116,7 +128,7 @@
     background-blend-mode: darken;
     overflow: hidden;
     padding-bottom: 10px;
-    filter: brightness(70%);
+    filter: brightness(80%);
     border-top-left-radius: 4%;
     border-top-right-radius: 4%;
 }
@@ -141,7 +153,7 @@ button a{
     color: white;
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
+    color: #c6c6c6;
     display: block; 
     transition: all 0.3s ease;
 }
