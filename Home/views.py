@@ -1,6 +1,8 @@
 from django.shortcuts import render, HttpResponse
 from django.template import loader
-from .models import PYQ, Calender, Book, TimeTable, Assignment
+from .models import PYQ, Calender, Book, TimeTable, Assignment, Contact
+from django.contrib import messages
+from datetime import datetime
 
 # Create your views here.
 def index(request):
@@ -16,6 +18,14 @@ def placement(request):
     return render(request, 'placement.html')
 
 def contact(request):
+    if request.method == "POST":
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        desc = request.POST.get('desc')
+        contact = Contact(name=name, email=email, phone=phone, desc=desc, date=datetime.today())
+        contact.save()
+        messages.success(request, 'Your Message has been sent!')
     return render(request, 'contact.html')
 
 def formPYQ(request):
