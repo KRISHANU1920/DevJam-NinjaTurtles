@@ -1,78 +1,92 @@
-*{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-} 
-
-.container{
+.container {
     border: 0;
-    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 0;
     max-width: 100%;
 }
 
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+.row {
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
-body{
+h1 {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 12px;
+}
+
+body {
     background: rgba(0, 0, 0, .4) url(../../img/Datastruct.jpg);
     background-blend-mode: darken;
     background-attachment: fixed;
     background-size: cover;
-
 }
 
-table{
-    min-width: 400px;
+.col p {
+    color: white;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+table {
+    min-width: 80%;
     color: white;
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 2rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
-    border-radius: 8px ;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0,0,0,.15);
-    font-family:Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
-thead th{
+thead th {
     background-color: rgba(0, 0, 0, 1);
     text-align: center;
-    padding: 12px 15px;
+    padding: 15px 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.601);
     font-weight: 500;
 
 }
-tbody tr{
+
+tbody tr {
     color: #bbbbbbd5;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.55);
     border-bottom: 1px solid rgb(111, 111, 111);
 }
-tbody tr:hover td{   
+
+tbody tr:hover td {
     color: white;
     transform: scale(1.06);
     transition: all .4s ease;
 }
 
-tbody tr:nth-child(even){
-    background-color: rgba(119, 118, 118, 0.334);
+tbody tr:nth-child(even) {
+    background-color: rgba(90, 86, 86, 0.717);
     border-bottom: 1px solid rgb(111, 111, 111);
 }
 
-tbody tr:last-of-type{
-    background-color: rgba(119, 118, 118, 0.334);
+tbody tr:last-of-type {
     border-bottom: 2px solid rgba(255, 255, 255, 0.601);
 }
 
-table td{
-    padding: 12px 15px;
-    text-align: center; 
+table td {
+    padding: 0;
+    text-align: center;
 }
 
-tr td a{
+tr td a {
     text-align: center;
     font-size: 16px;
     text-transform: capitalize;
@@ -80,12 +94,16 @@ tr td a{
     text-decoration: none;
     font-weight: 300;
     color: #c6c6c6;
-    display: block; 
+    display: block;
     transition: all 0.3s ease;
 }
 
-tr td a:hover{
-    transform: scale(1.09);    
+tr td a:hover {
+    transform: scale(1.09);
     color: white;
     /* padding-left: 50px; */
+}
+
+ul li {
+    list-style: none;
 }
