@@ -1,21 +1,25 @@
 /* write your styling here */
-/* *{
+*{
     margin: 0;
     padding: 0;
     width: 100%;
-} */
+} 
 
-/* .container{
+.container{
     border: 0;
     margin: 0;
     padding: 0;
     max-width: 100%;
-} */
+}
 
 #mycarousel {
     width: 100%;
     z-index: -1;
     padding: 0;
+    margin: 0;
+}
+
+.row{
     margin: 0;
 }
 
@@ -32,6 +36,11 @@
     padding: 0;
 }
 
+.carousel-item{
+    /* transition: transform 2s ease, opacity .5s ease-out; */
+    transition-timing-function:ease-in-out !important;
+    transition-duration:1s !important;
+}
 .carousel-item::after {
     content:"";
     position:absolute;
@@ -53,6 +62,7 @@
     color: white;
     z-index: 999;
     margin-bottom: 80px;
+    transform: translateX(-12%);
 }
 
 .carousel-caption h5{
@@ -64,39 +74,80 @@
     font-size: 20px;
 }
 
-.carousel-fade{
+/* .carousel-fade{
     transition: all 0.3s ease;
-}
+    transition-timing-function:ease-in-out !important; 
+} */
 
 #mycard{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 #cardrow{
     width: 100%;
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
-.cards{
-    background: blanchedalmond;
+
+.col-4{
     margin: 20px;
+}
+
+.cards{
+    background: rgba(78, 78, 78, 0.308);
+    box-shadow: 8px 10px 20px 5px rgb(0, 0, 0);
+    color: #bbbbbb;
+    border-radius: 4%;
+    /* margin-right: auto;
+    margin-left: auto; */
 }
 
 .cards img{
     width: 100%;
     object-fit: cover;
     object-position: center;
+    background: rgba(0, 0, 0, .3); 
+    background-blend-mode: darken;
     overflow: hidden;
     padding-bottom: 10px;
+    filter: brightness(70%);
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
 }
 
-/* .card-img-top {
-    width: 10%;
-    height: 4vh;
+.card-img-top {
+    height: 35vh;
     object-fit: cover;
-} */
+}
 
 .card-body{
     padding: 10px;
 }
 
+.card-title{
+    margin-bottom: 10px;
+}
+
+button a{
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block; 
+    transition: all 0.3s ease;
+}
+
+button a:hover{
+    transform: scale(1.09);    
+    color: white;
+    /* padding-left: 50px; */
+}
