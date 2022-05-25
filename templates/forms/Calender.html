@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calender</title>
+  <link rel="stylesheet" tyle=text/css href="../../static/assets/css/bootstrap.css">
+  <link rel="stylesheet" tyle=text/css href="../../static/assets/css/calender.css">
+</head>
+
+<body>
+
+  {% load static %}
+  <div class="container mx-lg-5 mt-lg-5">
+    <div class="row">
+      <h1 class="text-center rounded-3 p-3 bg-black bg-opacity-75 pt-3 text-white"> Calender</h1>
+    </div>
+
+    <div class="row py-3 ">
+      <form action="" class="form-group rounded-4 bg-black bg-opacity-50 pt-3 text-white" method="post">
+        {% csrf_token %}
+        <div class="col-md-6 m-auto">
+          <div class="form-group">
+            <label for="course">Course </label>
+            <select name="course" class="form-control bg-light bg-opacity-75">
+              <option value="MCA">MCA</option>
+              <option value="Btech">Btech</option>
+              <option value="Mtech">Mtech</option>
+            </select><br>
+          </div>
+
+          <div class="form-group">
+            <label for="branch">Branch </label>
+            <select name="branch" class="form-control bg-light bg-opacity-75">
+              <option value="NA">NA</option>
+              <option value="ECE">ECE</option>
+              <option value="CSE">CSE</option>
+              <option value="IT">IT</option>
+              <option value="MECHANICAL">Mechanical</option>
+              <option value="EEE">EEE</option>
+            </select><br>
+          </div>
+
+          <div class="form-group">
+            <label for="semester">Semester </label>
+            <select name="semester" class="form-control bg-light bg-opacity-75">
+              <option value="1">1st</option>
+              <option value="2">2nd</option>
+              <option value="3">3rd</option>
+              <option value="4">4th</option>
+              <option value="5">5th</option>
+              <option value="6">6th</option>
+              <option value="7">7th</option>
+            </select>
+          </div><br>
+
+          <div class="form-group pb-3">
+            <button class="btn btn-dark btn-block" id="submit" type="submit">Submit</button>
+          </div>
+
+
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+  <div class="container mx-lg-5 mt-lg-5">
+    <div class="row">
+      <h3 class="text-center rounded-3 p-3 bg-black bg-opacity-75 pt-3 text-white"> Click <a href="#">here</a> to download your desired Calender.
+      </h3>
+    </div>
+  </div>
+
+
+
+  <ul>
+    {% for x in myPYQ %}
+        <li><a href="{{x.file.url}}" download>{{x.file}}</a></li>
+        {% endfor %}
+  </ul>
+</body>
+
+</html>

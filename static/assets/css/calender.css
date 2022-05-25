@@ -1,0 +1,12 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body{
+    background: rgba(0, 0, 0, .4) url(../../img/calender.jpg);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
