@@ -43,7 +43,7 @@
        d) change directory to env_site : <b>cd env_site</b><br>
        e) go to Scripts directory : <b>cd Scripts</b><br>
        f) run the command : <b>Activate</b><br>
-       d) install django :<b> pip install django</b>
+       g) install django :<b> pip install django</b>
   3) Return to env_site directory by the following command :
        <b>cd .. </b>
   4) Run the following command<br>
