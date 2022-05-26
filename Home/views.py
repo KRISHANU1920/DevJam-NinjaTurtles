@@ -17,7 +17,7 @@ def academics(request):
 def placement(request):
     return render(request, 'placement.html')
 
-def contact(request):
+def contacts(request):
     if request.method == "POST":
         name = request.POST.get('name')
         email = request.POST.get('email')
@@ -26,7 +26,7 @@ def contact(request):
         contact = Contact(name=name, email=email, phone=phone, desc=desc, date=datetime.today())
         contact.save()
         messages.success(request, 'Your Message has been sent!')
-    return render(request, 'contact.html')
+    return render(request, 'contacts.html')
 
 def formPYQ(request):
     if request.method == 'POST':
