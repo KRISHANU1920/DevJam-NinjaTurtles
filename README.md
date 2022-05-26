@@ -39,14 +39,19 @@
   2) Installation of Django<br>
        a) install pip : <b>-m pip install -U pip</b><br>
        b) install virtual environment : <b>pip install virtualenv</b><br>
-       c) set virtual environment 
-       b) install django :<b> pip install django</b>
-  3) Run the following command<br>
-       <b>cd gyansangraha</b>
-  4) Start the Server<br>
-      <b>python manage.py runserver</b>
-  5) To check the server running or not go to web browser and enter<br>
-  <b> http://127.0.0.1:8000</b> as url
+       c) set virtual environment  : <b>virtualenv env_site</b><br>
+       d) change directory to env_site : <b>cd env_site</b><br>
+       e) go to Scripts directory : <b>cd Scripts</b><br>
+       f) run the command : <b>Activate</b><br>
+       d) install django :<b> pip install django</b>
+  3) Return to env_site directory by the following command :
+       <b>cd .. </b>
+  4) Run the following command<br>
+       <b>cd GyaanSangrah</b>
+  5) Start the Server<br>
+       <b>python manage.py runserver</b>
+  6) To check the server running or not go to web browser and enter<br>
+       <b> http://127.0.0.1:8000</b> as url
 
 
 ## Contributors:
@@ -63,4 +68,4 @@ Team Name: Ninja Turtles
 * [Presentation](https://www.canva.com/design/DAFBrExaov0/nLJEoN9okbD1_aHo04RPCw/view?utm_content=DAFBrExaov0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 * [Video]()
 
-### Made at: DevJam 
+### Made at: DevJam 5.0
