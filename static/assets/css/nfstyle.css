@@ -3,7 +3,7 @@
 body{
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
-    background: rgba(0, 0, 0, .3) url(../../img/index-background.jpg); 
+    /* background: rgba(0, 0, 0, .3) url(../../img/index-background.jpg);  */
     background-blend-mode: darken;
     background-size: cover;
     background-attachment: fixed;
@@ -11,20 +11,65 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-#header .container, #footer .container{
-    border: 0;
+#navigationbar{
     margin: 0;
     padding: 0;
-    min-width: 100%;
     max-width: 100%;
+    position: fixed;
+    z-index: 999;
+    color: white;
+}
+
+#navigationbar .row{
+    margin: 0;
+}
+
+.navbar{
+    opacity: 0.8;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/* .navbar-nav{
+    padding: 9px;
+} */
+.navbar-item{
+    text-align: center;
+}
+
+ a{
+    color: white;
+}
+
+/* .navbar-item:hover{
+    color: white;
+    transform: scale(1.09);
+    transition: 0.4s;
+} */
+
+.nav-link{
+    color: white;
+    padding: 1rem;
+}
+
+.nav-link:hover{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    border-bottom: 3px solid;
+    border-color: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    transition: 0.2s;
 }
 
 .footer .row{
@@ -126,34 +171,6 @@ footer .container{
 .footer-col .social-links a:hover{
     color: #343434;
     background-color: white;
-}
-
-#header .navbar{
-    opacity: 0.8;
-    width: 100%;
-    z-index: 999;
-    position: fixed;
-    left: 0;
-    top: 0;
-}
-
-#header .navbar-item{
-    text-align: center;
-}
-
-#header .nav-link{
-    color: white;
-    padding: 1rem;
-}
-
-#header .nav-link:hover{
-    background-color: rgb(66, 66, 66);
-    color: white;
-    border-bottom: 3px solid;
-    border-color: white;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: 0.2s;
 }
 
 ul{
