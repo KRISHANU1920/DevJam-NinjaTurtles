@@ -104,3 +104,19 @@ def bookform(request):
         context ={}
     template = loader.get_template('forms/bookform.html')
     return HttpResponse(template.render(context, request))
+
+
+def dsa(request):
+    return render(request, 'placements/dsa.html')
+
+def cp(request):
+    return render(request, 'placements/cp.html')
+
+def coresubject(request):
+    return render(request, 'placements/coresubject.html')
+
+def project(request):
+    return render(request, 'placements/project.html')
+
+def resume(request):
+    return render(request, 'placements/resume.html')

@@ -14,4 +14,9 @@ urlpatterns = [
     path('forms/timetable', views.timetable, name='timetable'),
     path('forms/assignmentForm', views.assignmentForm, name='assignmentForm'),
     path('forms/bookform', views.bookform, name='bookform'),
+    path('placements/dsa', views.dsa, name='dsa'),
+    path('placements/cp', views.cp, name='cp'),
+    path('placements/coresubject', views.coresubject, name='coresubject'),
+    path('placements/project', views.project, name='project'),
+    path('placements/resume', views.resume, name='resume'),
 ]
