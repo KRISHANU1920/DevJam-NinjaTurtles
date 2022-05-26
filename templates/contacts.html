@@ -1,37 +1,43 @@
-<div class="container-fluid px-0 mb-3">
-    <img src="https://picsum.photos/1900/500?contact,phone" class="d-block w-100" alt="image1">
-</div>
-
-<div class="container">
-    <h1 class="text-center" >Contact Us</h1>
-
-    <form method="post" action="">
-        {% csrf_token %}
-        <!-- Name input -->
-        <div class="form-outline mb-4">
-        <label class="form-label" for="name">Name</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" />
-        </div>
-    
-        <!-- Email input -->
-        <div class="form-outline mb-4">
-        <label class="form-label" for="email">Email address</label>
-        <input type="email" id="email" name="email" placeholder="Enter Your Email" class="form-control" />
-        </div>
-
-        <!-- Phone Number input -->
-        <div class="form-outline mb-4">
-            <label class="form-label" for="phone">Phone</label>
-            <input type="phone2numeric" id="phone" name="phone" placeholder="Enter Your Phone Number" class="form-control" />
+<html>
+    <head>
+    </head>
+    <body>
+        <div class="container-fluid px-0 mb-3">
+            <img src="https://picsum.photos/1900/500?contact,phone" class="d-block w-100" alt="image1">
         </div>
         
-        <!-- Message input -->
-        <div class="form-outline mb-4">
-        <label class="form-label" for="desc">Message</label>
-        <textarea class="form-control" id="desc" name="desc" placeholder="Tell about what you want to contact me.." rows="4"></textarea>
+        <div class="container">
+            <h1 class="text-center" >Contact Us</h1>
+        
+            <form method="post" action="">
+                {% csrf_token %}
+                <!-- Name input -->
+                <div class="form-outline mb-4">
+                <label class="form-label" for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" />
+                </div>
+            
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                <label class="form-label" for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" class="form-control" />
+                </div>
+        
+                <!-- Phone Number input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="phone">Phone</label>
+                    <input type="phone2numeric" id="phone" name="phone" placeholder="Enter Your Phone Number" class="form-control" />
+                </div>
+                
+                <!-- Message input -->
+                <div class="form-outline mb-4">
+                <label class="form-label" for="desc">Message</label>
+                <textarea class="form-control" id="desc" name="desc" placeholder="Tell about what you want to contact me.." rows="4"></textarea>
+                </div>
+            
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+            </form>
         </div>
-    
-        <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
-    </form>
-</div>
+    </body>
+</html>
