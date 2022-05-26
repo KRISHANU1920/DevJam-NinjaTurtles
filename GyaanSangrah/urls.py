@@ -18,6 +18,10 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+admin.site.site_header = "GyaanSangrah Admin"
+admin.site.site_title = "GyaanSangrah Admin Portal"
+admin.site.index_title = "Welcome to GyaanSangrah"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Home.urls')),
