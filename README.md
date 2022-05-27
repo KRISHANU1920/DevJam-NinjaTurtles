@@ -66,6 +66,6 @@ Team Name: Ninja Turtles
 ### Video and PPT
 
 * [Presentation](https://www.canva.com/design/DAFBrExaov0/nLJEoN9okbD1_aHo04RPCw/view?utm_content=DAFBrExaov0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-* [Video]()
+* [Video](https://drive.google.com/file/d/1-OI6B00JLDHLO4aJllg5GW9BG_sCbB59/view?usp=drivesdk)
 
 ### Made at: DevJam 5.0
